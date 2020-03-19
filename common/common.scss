@@ -6,6 +6,10 @@
 body{
   background-color: $snow;
 
+  div:focus{
+    outline: none;
+  }
+
   #main-outlet{
     padding: $column-gutter;
     padding-top: $header-height + $column-gutter;
