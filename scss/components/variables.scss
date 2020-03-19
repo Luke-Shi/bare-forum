@@ -1,1 +1,23 @@
-$primary: #fff;
+/* global variables */
+$header-height: 80px;
+$column-gutter: 20px;
+$global-radius: 5px;
+
+/* colors */
+$transparent: rgba(255,255,255,0);
+$black: #000;
+$white: #fff;
+$snow: #F1F2F2;
+$turquoise: #4FD1D1; //main color
+$turquoise-simelight: #9DE6E6;
+$turquoise-light: #EDFBFB;
+$oil: #1B3852; //title & text
+$gray: #AAAAAA;
+$gray-ash: #FAFAFA; //form background
+$gray-light: #DDDDDD; //border color
+$facebook-color: #3B5998;
+$planner-table-boder: #707070;
+
+$primary: $turquoise;
+
+

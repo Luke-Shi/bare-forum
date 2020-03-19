@@ -1,5 +1,38 @@
 @import "components/variables";
+@import "components/elements";
+@import "components/header";
 
+/* structure layout */
 body{
-  background-color: $primary;
+  background-color: $snow;
+
+  #main-outlet{
+    padding: $column-gutter;
+    padding-top: $header-height + $column-gutter;
+  }
+
+  .list-controls{
+    padding: $column-gutter;
+    background-color: $white;
+    border-radius: $global-radius;
+    margin-bottom: $column-gutter;
+    .navigation-container{
+      display: flex;
+      align-items: center;
+      .category-breadcrumb, #navigation-bar, #create-topic{
+        margin-bottom: 0;
+      }
+      #create-topic{
+        margin-left: auto;
+      }
+    }
+  }
+
+  .container.list-container{
+    padding: $column-gutter;
+    background-color: $white;
+    border-radius: $global-radius;
+    margin-bottom: $column-gutter;
+  }
+
 }

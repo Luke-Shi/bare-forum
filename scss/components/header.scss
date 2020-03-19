@@ -1,0 +1,32 @@
+body header.d-header{
+  height: $header-height;
+  margin-bottom: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  ul.d-header-icons{
+    li.header-dropdown-toggle{
+      margin-right: 8px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a.icon{
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        flex: 0 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        &:hover, &:focus{
+          background-color: $turquoise-light
+        }
+        .d-icon{
+          line-height: 1;
+          color: $turquoise-simelight;
+          width: 18px;
+        }
+      }
+    }
+  }
+}
