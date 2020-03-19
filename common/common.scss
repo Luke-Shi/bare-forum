@@ -33,6 +33,9 @@ body{
     background-color: $white;
     border-radius: $global-radius;
     margin-bottom: $column-gutter;
+    #list-area{
+      margin-bottom: $column-gutter;
+    }
   }
 
 }
