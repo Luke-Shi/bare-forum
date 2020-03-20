@@ -1,0 +1,48 @@
+/* structure layout */
+body{
+  background-color: $snow;
+  font-family: 'Poppins', sans-serif !important;
+
+  div:focus{
+    outline: none;
+  }
+
+  #main-outlet{
+    padding: $column-gutter;
+    padding-top: $header-height + $column-gutter;
+  }
+
+  // control pane under header
+  .list-controls{
+    padding: $column-gutter;
+    background-color: $white;
+    border-radius: $global-radius;
+    margin-bottom: $column-gutter;
+    @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, 0.1));
+    .navigation-container{
+      display: flex;
+      align-items: center;
+      .category-breadcrumb, #navigation-bar, #create-topic{
+        margin-bottom: 0;
+      }
+      #create-topic{
+        margin-left: auto;
+      }
+      #navigation-bar{
+
+      }
+    }
+  }
+
+  .container.list-container{
+    padding: $column-gutter;
+    background-color: $white;
+    border-radius: $global-radius;
+    margin-bottom: $column-gutter;
+    @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, 0.1));
+    #list-area{
+      margin-bottom: $column-gutter;
+    }
+  }
+
+}

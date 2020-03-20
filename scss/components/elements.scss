@@ -1,25 +1,22 @@
-body{
+// nav-pills
+// --------------------------------------------------
 
-  button.btn-default{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 15px;
-    min-height: 35px;
-    min-width: 120px;
-    border-radius: $global-radius;
-    color: $primary;
-    background-color: $turquoise-light;
-    .d-icon{
-      color: currentColor;
-    }
-    &:hover{
-      background-color: darken($turquoise-light, 5%) !important;
-      color: $primary !important;
-      .d-icon{
-        color: currentColor !important;
+.nav-pills {
+  > li {
+    > a {
+      @include flex();
+      color: $primary;
+      background-color: $turquoise-light;
+      border-radius: $global-radius;
+      &:hover {
+        color: $primary;
+        background-color: darken($turquoise-light, 5%);
       }
     }
+    a.active {
+      color: $primary;
+      background-color: darken($turquoise-light, 5%);
+    }
   }
-
 }
+

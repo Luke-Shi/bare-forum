@@ -1,0 +1,112 @@
+// btn base
+// --------------------------------------------------
+@mixin btn(
+  $text-color: $primary,
+  $bg-color: $turquoise-light,
+  $icon-color: $primary,
+  $hover-text-color: $primary,
+  $hover-bg-color: darken($turquoise-light, 5%),
+  $hover-icon-color: $primary
+) {
+  // display: inline-block;
+  @include flex;
+  margin: 0;
+  padding: 6px 20px;
+  min-height: $form-input-height;
+  border: none;
+  border-radius: $global-radius;
+  box-sizing: border-box;
+  font-weight: normal;
+  color: $text-color;
+  background: $bg-color;
+  font-size: $font-0;
+  line-height: $line-height-small;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  outline: none;
+  .d-icon {
+    color: $icon-color;
+    margin-right: 0.45em;
+    transition: color 0.25s;
+    line-height: $line-height-medium; // Match button text line-height
+  }
+  &.no-text {
+    .d-icon {
+      margin-right: 0;
+    }
+  }
+  @include hover {
+    background: $hover-bg-color;
+    color: $hover-text-color;
+    .d-icon {
+      color: $hover-icon-color;
+    }
+  }
+  &[href] {
+    color: $text-color;
+  }
+  &:active,
+  &.btn-active {
+    @include linear-gradient(
+      scale-color($bg-color, $lightness: -20%),
+      $bg-color
+    );
+  }
+  &[disabled],
+  &.disabled {
+    opacity: 0.4;
+    &:hover {
+      color: $text-color;
+      background: $bg-color;
+      .d-icon {
+        color: $icon-color;
+      }
+    }
+    cursor: not-allowed;
+  }
+}
+
+.btn.hidden {
+  display: none;
+}
+
+// Default button
+// --------------------------------------------------
+
+.btn {
+  @include btn;
+}
+
+// Primary button
+// --------------------------------------------------
+
+.btn-primary {
+  @include btn(
+    // $text-color: $secondary,
+    // $bg-color: $tertiary,
+    // $icon-color: $secondary,
+    // $hover-bg-color: darken($tertiary, 10%),
+    // $hover-icon-color: $secondary
+  );
+}
+
+// Danger button
+// --------------------------------------------------
+
+.btn-danger {
+  @include btn(
+    $text-color: $secondary,
+    $bg-color: $danger,
+    $icon-color: $danger-low,
+    $hover-bg-color:
+      dark-light-choose(
+        scale-color($danger, $lightness: -20%),
+        scale-color($danger, $lightness: 20%)
+      ),
+    $hover-icon-color: $danger-low
+  );
+  &:hover, &.btn-hover{
+    color: $white !important;
+  }
+}

@@ -1,7 +1,8 @@
-/* global variables */
-$header-height: 80px;
-$column-gutter: 20px;
-$global-radius: 5px;
+/* fonts */
+@font-face{
+  font-family: 'KGHAPPY';
+  src: url('fonts/KGHAPPY/KGHAPPYSolid.ttf') format('truetype');
+}
 
 /* colors */
 $transparent: rgba(255,255,255,0);
@@ -17,7 +18,16 @@ $gray-ash: #FAFAFA; //form background
 $gray-light: #DDDDDD; //border color
 $facebook-color: #3B5998;
 $planner-table-boder: #707070;
-
+// custom
 $primary: $turquoise;
+$border-color: $gray-light;
+
+/* global variables */
+$header-height: 80px;
+$column-gutter: 20px;
+$global-radius: 5px;
+$button-height: 35px;
+$form-border: $gray-light;
+$form-input-height: 35px;
 
 

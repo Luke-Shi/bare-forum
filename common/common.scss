@@ -1,45 +1,11 @@
-@import "components/variables";
+// Preset
+@import "preset/variables";
+@import "preset/mixins";
+// Components
+@import "components/discourse";
+@import "components/select-kit";
 @import "components/elements";
-@import "components/header";
-
-/* structure layout */
-body{
-  background-color: $snow;
-
-  div:focus{
-    outline: none;
-  }
-
-  #main-outlet{
-    padding: $column-gutter;
-    padding-top: $header-height + $column-gutter;
-  }
-
-  .list-controls{
-    padding: $column-gutter;
-    background-color: $white;
-    border-radius: $global-radius;
-    margin-bottom: $column-gutter;
-    .navigation-container{
-      display: flex;
-      align-items: center;
-      .category-breadcrumb, #navigation-bar, #create-topic{
-        margin-bottom: 0;
-      }
-      #create-topic{
-        margin-left: auto;
-      }
-    }
-  }
-
-  .container.list-container{
-    padding: $column-gutter;
-    background-color: $white;
-    border-radius: $global-radius;
-    margin-bottom: $column-gutter;
-    #list-area{
-      margin-bottom: $column-gutter;
-    }
-  }
-
-}
+@import "components/buttons";
+// Layout Elements
+@import "application/header";
+@import "application/body";
