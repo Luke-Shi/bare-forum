@@ -1,3 +1,11 @@
+@mixin bare-panel(){
+  padding: $column-gutter;
+  background-color: $white;
+  border-radius: $global-radius;
+  margin-bottom: $column-gutter;
+  @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, 0.1));
+}
+
 /* structure layout */
 body{
   background-color: $snow;
@@ -34,15 +42,21 @@ body{
     }
   }
 
+  // main post container
   .container.list-container{
-    padding: $column-gutter;
-    background-color: $white;
-    border-radius: $global-radius;
-    margin-bottom: $column-gutter;
-    @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, 0.1));
+    @include bare-panel;
     #list-area{
       margin-bottom: $column-gutter;
     }
   }
+
+  // blog show container
+  #main-outlet.wrap{
+    > .ember-view.regular:nth-child(3){
+      @include bare-panel;
+    }
+  }
+
+
 
 }

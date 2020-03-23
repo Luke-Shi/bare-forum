@@ -20,3 +20,7 @@
   }
 }
 
+.topic-footer-main-buttons{
+  @include flex(center, unset);
+}
+
