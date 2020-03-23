@@ -57,6 +57,17 @@ body{
     }
   }
 
+  // user show page
+  .user-main{
+    @include bare-panel;
+    .user-content-wrapper{
+      .user-primary-navigation .user-nav{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
 
 
 }

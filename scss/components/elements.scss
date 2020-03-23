@@ -24,3 +24,13 @@
   @include flex(center, unset);
 }
 
+// badges
+.badge-wrapper.bullet span.badge-category{
+  color: $gray-dark;
+}
+
+// grippie
+.open .grippie{
+  background: $primary;
+}
+

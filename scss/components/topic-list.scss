@@ -1,3 +1,8 @@
 .topic-list-main-link a.title, .topic-list .main-link a.title, .latest-topic-list-item .main-link a.title{
   color: $primary;
 }
+
+.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification){
+  font-weight: 300;
+  color: lighten($primary, 5%);
+}

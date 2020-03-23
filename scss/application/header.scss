@@ -29,4 +29,9 @@ body header.d-header{
       }
     }
   }
+
+  .menu-panel.drop-down {
+    top: 110% !important;
+    border-radius: $global-radius;
+  }
 }

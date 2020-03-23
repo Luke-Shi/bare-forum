@@ -110,3 +110,54 @@
     color: $white !important;
   }
 }
+
+// post control button
+nav.post-controls .actions{
+  display: flex;
+  align-items: center;
+}
+nav.post-controls{
+  button:not(.like-count):not(.toggle-like){
+    @include flex
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    flex: 0 0 40px;
+    border-radius: 50%;
+    svg{
+      margin-left: 2px;
+    }
+    &.d-hover, &:hover{
+      color: $primary;
+      background-color: $turquoise-light;
+      svg{
+        color: $primary;
+      }
+    }
+  }
+  .double-button{
+    border-radius: 200px;
+    &:hover button{
+      background-color: $turquoise-light;
+    }
+    button{
+      &.button-count{
+        border-radius: 200px 0 0 200px;
+        & + .toggle-like{
+          border-radius: 0 200px 200px 0;
+          &:hover, &.d-hover{
+            background-color: $turquoise-light;
+          }
+        }
+      }
+      &:only-child{
+        @include flex
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        flex: 0 0 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
