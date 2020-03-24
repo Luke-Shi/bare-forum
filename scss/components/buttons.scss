@@ -139,8 +139,10 @@ nav.post-controls{
   button.btn-icon-text{
     @include flex;
     padding: 0 10px;
+    min-height: 40px;
     border-radius: 200px;
     &:hover, &.d-hover{
+      color: $primary;
       background-color: $turquoise-light;
     }
   }
