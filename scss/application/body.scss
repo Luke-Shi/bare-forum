@@ -99,6 +99,10 @@ body{
         .full-search-dates #postTime{
           margin-bottom: 4px;
         }
+        .ac-wrap{
+          border-radius: $global-radius;
+          border-color: $border-color;
+        }
       }
     }
   }
