@@ -20,7 +20,14 @@
   }
 }
 
-.admin-main-nav, .admin-controls .nav-pills > li{
+.admin-main-nav .nav-pills > li{
+  margin-right: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.admin-controls .nav-pills > li{
   margin-right: 5px;
   &:last-child{
     margin-right: 0;
