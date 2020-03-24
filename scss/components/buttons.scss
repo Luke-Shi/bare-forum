@@ -144,6 +144,9 @@ nav.post-controls{
     &:hover, &.d-hover{
       color: $primary;
       background-color: $turquoise-light;
+      svg{
+        color: $primary;
+      }
     }
   }
 
