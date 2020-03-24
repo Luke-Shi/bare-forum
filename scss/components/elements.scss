@@ -32,6 +32,10 @@
   &:last-child{
     margin-right: 0;
   }
+  a.active {
+    color: $primary;
+    background-color: darken($turquoise-light, 5%);
+  }
 }
 
 
