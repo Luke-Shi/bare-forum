@@ -74,7 +74,7 @@ body{
 
   // search page
   &.search-page #main-outlet, &.staff #main-outlet{
-    > .ember-view:nth-child(3){
+    > section.ember-view:nth-child(3){
       @include bare-panel;
     }
     .google-search-form form{
