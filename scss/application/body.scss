@@ -62,6 +62,13 @@ body{
     }
   }
 
+  // review page
+  #main-outlet.wrap{
+    > .reviewable:nth-child(3){
+      @include bare-panel;
+    }
+  }
+
   // user show page
   .user-main{
     @include bare-panel;
