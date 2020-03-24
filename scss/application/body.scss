@@ -15,6 +15,10 @@ body{
     outline: none;
   }
 
+  .alert.alert-info{
+    background-color: $turquoise-light;
+  }
+
   #main-outlet{
     padding: $column-gutter;
     padding-top: $header-height + $column-gutter;
