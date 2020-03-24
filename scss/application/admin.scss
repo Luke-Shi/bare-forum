@@ -18,6 +18,11 @@ body.admin-interface{
     }
   }
 
+  .admin-container{
+    padding: $column-gutter;
+    margin-top: 0;
+  }
+
   .admin-customize .admin-container{
     padding: $column-gutter;
     margin-top: 0;
