@@ -40,9 +40,13 @@ body.admin-interface{
     }
   }
 
-  .admin-customize.admin-customize-themes .admin-container{
+  .admin-customize .admin-container{
     padding: $column-gutter;
     margin-top: 0;
+    &.admin-customize-themes .admin-container{
+      padding: $column-gutter;
+      margin-top: 0;
+    }
   }
 
   .admin-customize .themes-list-header .tab{
