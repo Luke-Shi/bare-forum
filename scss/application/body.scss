@@ -73,7 +73,7 @@ body{
   }
 
   // search page
-  &.search-page #main-outlet{
+  &.search-page #main-outlet, &.staff #main-outlet{
     > section.ember-view:nth-child(3){
       @include bare-panel;
     }
