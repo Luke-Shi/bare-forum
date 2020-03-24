@@ -39,6 +39,12 @@ body.admin-interface{
       background-color: darken($turquoise-light, 5%);
     }
   }
+
+  .admin-customize.admin-customize-themes .admin-container{
+    padding: $column-gutter;
+    margin-top: 0;
+  }
+
 }
 
 
