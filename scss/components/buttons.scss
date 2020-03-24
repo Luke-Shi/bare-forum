@@ -135,6 +135,16 @@ nav.post-controls{
       }
     }
   }
+
+  button.btn-icon-text{
+    @include flex;
+    padding: 0 10px;
+    border-radius: 200px;
+    &:hover, &.d-hover{
+      background-color: $turquoise-light;
+    }
+  }
+
   .double-button{
     border-radius: 200px;
     &:hover button{
@@ -160,4 +170,5 @@ nav.post-controls{
       }
     }
   }
+
 }
