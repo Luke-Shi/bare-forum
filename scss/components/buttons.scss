@@ -117,7 +117,7 @@ nav.post-controls .actions{
   align-items: center;
 }
 nav.post-controls{
-  button:not(.like-count):not(.toggle-like){
+  button:not(.like-count):not(.toggle-like):not(.btn-icon-text){
     @include flex
     padding: 0;
     height: 40px;
