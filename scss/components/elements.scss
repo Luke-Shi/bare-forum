@@ -20,43 +20,6 @@
   }
 }
 
-// admin interface
-body.admin-interface{
-  .admin-main-nav .nav-pills > li{
-    margin-right: 5px;
-    &:last-child{
-      margin-right: 0;
-    }
-  }
-
-  .admin-controls .nav-pills > li{
-    margin-right: 5px;
-    &:last-child{
-      margin-right: 0;
-    }
-    a.active {
-      color: $primary;
-      background-color: darken($turquoise-light, 5%);
-    }
-  }
-
-  .admin-customize .admin-container{
-    padding: $column-gutter;
-    margin-top: 0;
-    &.admin-customize-themes .admin-container{
-      padding: $column-gutter;
-      margin-top: 0;
-    }
-  }
-
-  .admin-customize .themes-list-header .tab{
-    border-radius: 0;
-  }
-
-}
-
-
-
 .topic-footer-main-buttons{
   @include flex(center, unset);
 }
