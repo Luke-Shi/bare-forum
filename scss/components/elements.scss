@@ -20,23 +20,27 @@
   }
 }
 
-.admin-main-nav .nav-pills > li{
-  margin-right: 5px;
-  &:last-child{
-    margin-right: 0;
+// admin interface
+body.admin-inter-face{
+  .admin-main-nav .nav-pills > li{
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .admin-controls .nav-pills > li{
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+    a.active {
+      color: $primary;
+      background-color: darken($turquoise-light, 5%);
+    }
   }
 }
 
-.admin-controls .nav-pills > li{
-  margin-right: 5px;
-  &:last-child{
-    margin-right: 0;
-  }
-  a.active {
-    color: $primary;
-    background-color: darken($turquoise-light, 5%);
-  }
-}
 
 
 .topic-footer-main-buttons{
