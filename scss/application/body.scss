@@ -36,8 +36,8 @@ body{
       #create-topic{
         margin-left: auto;
       }
-      #navigation-bar{
-
+      .select-kit.single-select button{
+        margin-bottom: 0;
       }
     }
   }
@@ -63,6 +63,42 @@ body{
     .user-content-wrapper{
       .user-primary-navigation .user-nav{
         margin-bottom: 0;
+      }
+    }
+  }
+
+  // user index page
+  &.users-page #main-outlet > section.ember-view:nth-child(3){
+    @include bare-panel;
+  }
+
+  // search page
+  &.search-page #main-outlet{
+    > section.ember-view:nth-child(3){
+      @include bare-panel;
+    }
+    .google-search-form form{
+      display: flex;
+      align-items: center;
+      input, button{
+        margin-bottom: 0;
+      }
+      button{
+        margin-left: 4px;
+      }
+    }
+    .search-advanced-sidebar{
+      border-radius: $global-radius;
+      .search-advanced-title{
+        border-top-left-radius: $global-radius;
+        border-top-right-radius: $global-radius;
+      }
+      .search-advanced-filters{
+        border-bottom-left-radius: $global-radius;
+        border-bottom-right-radius: $global-radius;
+        .full-search-dates #postTime{
+          margin-bottom: 4px;
+        }
       }
     }
   }
