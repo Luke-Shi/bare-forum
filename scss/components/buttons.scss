@@ -8,11 +8,11 @@
   $hover-bg-color: darken($turquoise-light, 5%),
   $hover-icon-color: $primary
 ) {
-  // display: inline-block;
-  @include flex;
+  display: inline-block;
+  // @include flex;
   margin: 0;
-  padding: 6px 20px;
-  min-height: $form-input-height;
+  padding: 10px 20px;
+  // min-height: $form-input-height;
   border: none;
   border-radius: $global-radius;
   box-sizing: border-box;
