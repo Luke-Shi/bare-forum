@@ -141,11 +141,11 @@ nav.post-controls{
     padding: 0 10px;
     min-height: 40px;
     border-radius: 200px;
-    &:hover, &.d-hover{
+    &.d-hover, &:hover{
       color: $primary;
       background-color: $turquoise-light;
       svg{
-        color: $primary;
+        color: $primary !important;
       }
     }
   }
