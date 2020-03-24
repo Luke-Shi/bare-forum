@@ -3,8 +3,12 @@
 
 .nav-pills {
   > li {
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
     > a {
-      @include flex();
+      // @include flex();
       color: $primary;
       background-color: $turquoise-light;
       border-radius: $global-radius;
