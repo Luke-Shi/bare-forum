@@ -3,10 +3,6 @@
 
 .nav-pills {
   > li {
-    margin-right: 8px;
-    &:last-child{
-      margin-right: 0;
-    }
     > a {
       // @include flex();
       color: $primary;
@@ -23,6 +19,14 @@
     }
   }
 }
+
+.admin-main-nav .nav-pills > li{
+  margin-right: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
 
 .topic-footer-main-buttons{
   @include flex(center, unset);
