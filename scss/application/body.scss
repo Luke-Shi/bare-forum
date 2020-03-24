@@ -107,7 +107,9 @@ body{
     }
   }
 
-
-
+  // message show page
+  &.staff #main-outlet > .ember-view.private_message:nth-child(3){
+    @include bare-panel;
+  }
 
 }
